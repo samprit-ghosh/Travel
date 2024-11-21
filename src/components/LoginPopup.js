@@ -30,7 +30,7 @@ const LoginPopup = () => {
 
   // Redirect if user tries to access protected pages without being logged in
   useEffect(() => {
-    const protectedPaths = ["/contact", "/portfolio", "/about"];
+    const protectedPaths = ["/contact", "/portfolio", "/about", "/query"];
     const currentPath = window.location.pathname;
 
     if (protectedPaths.includes(currentPath) && !loginSuccess) {

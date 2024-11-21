@@ -212,7 +212,7 @@ const Header = () => {
   const [isMenuActive, setIsMenuActive] = useState(false);
 
   useEffect(() => {
-    const protectedPaths = ["/contact", "/portfolio", "/about"];
+    const protectedPaths = ["/contact", "/portfolio", "/about", "/query"];
     const currentPath = window.location.pathname;
 
     if (protectedPaths.includes(currentPath) && !localStorage.getItem("authToken")) {
