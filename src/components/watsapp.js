@@ -52,12 +52,10 @@ export default WhatsappIcon;
 
 
 
+
 const HeroSection = () => {
   // Define video file paths here
-  const videoSources = [
-    backgroundVideo1,
-    backgroundVideo2
-  ];
+  const videoSources = [backgroundVideo1, backgroundVideo2];
 
   const [currentIndex, setCurrentIndex] = useState(0);
   const videoRefs = useRef([]);
@@ -81,13 +79,36 @@ const HeroSection = () => {
     videoRefs.current.forEach((video, index) => {
       if (video) {
         if (index === currentIndex) {
-          video.play(); // Play only the current video
+          const playPromise = video.play(); // Play the current video
+          if (playPromise !== undefined) {
+            playPromise.catch((error) => {
+              console.warn("Autoplay failed. Interaction may be needed.", error);
+            });
+          }
         } else {
           video.pause(); // Pause other videos
           video.currentTime = 0; // Reset time
         }
       }
     });
+  }, [currentIndex]);
+
+  // Pause videos when the tab is not visible
+  useEffect(() => {
+    const handleVisibilityChange = () => {
+      if (document.hidden) {
+        videoRefs.current.forEach((video) => video?.pause());
+      } else {
+        videoRefs.current[currentIndex]?.play().catch((error) => {
+          console.warn("Autoplay failed on tab visibility change:", error);
+        });
+      }
+    };
+
+    document.addEventListener("visibilitychange", handleVisibilityChange);
+    return () => {
+      document.removeEventListener("visibilitychange", handleVisibilityChange);
+    };
   }, [currentIndex]);
 
   return (
@@ -99,16 +120,20 @@ const HeroSection = () => {
           src={videoSrc}
           muted
           loop
-          autoplay
           playsInline
-          className={`slider-video ${index === currentIndex ? 'video-active' : ''}`}
+          className={`slider-video ${index === currentIndex ? "video-active" : ""}`}
         />
       ))}
 
       <div className="overlay">
         <h1>Get Inspired: Itineraries and Travel Ideas</h1>
-        <p>We planning and booking travel experiences, including flights, accommodations, and tours, tailored to clients' needs. It serves as a one-stop shop for hassle-free vacation and business trip arrangements.</p>
-        <a href="/query" className="cta-button">Get Started</a>
+        <p>
+          We plan and book travel experiences, including flights, accommodations,
+          and tours tailored to clients' needs. It serves as a one-stop shop for hassle-free vacation and business trip arrangements.
+        </p>
+        <a href="/query" className="cta-button">
+          Get Started
+        </a>
       </div>
 
       {/* Slider Dots */}
@@ -116,7 +141,7 @@ const HeroSection = () => {
         {videoSources.map((_, index) => (
           <span
             key={index}
-            className={`dot ${index === currentIndex ? 'active' : ''}`}
+            className={`dot ${index === currentIndex ? "active" : ""}`}
             onClick={() => goToSlide(index)}
           ></span>
         ))}
@@ -126,4 +151,3 @@ const HeroSection = () => {
 };
 
 export { HeroSection };
-

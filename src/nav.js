@@ -212,7 +212,7 @@ const Header = () => {
   const [isMenuActive, setIsMenuActive] = useState(false);
 
   useEffect(() => {
-    const protectedPaths = ["/contact", "/portfolio", "/about", "/query"];
+    const protectedPaths = ["/contact", "/portfolio", "/about"];
     const currentPath = window.location.pathname;
 
     if (protectedPaths.includes(currentPath) && !localStorage.getItem("authToken")) {
@@ -291,7 +291,7 @@ const Header = () => {
 
         <nav className={`navbar ${isMenuActive ? "active" : ""}`}>
           <a href="/">Home</a>
-          <a href="/portfolio">Portfolio</a>
+          <a href="/https://samprit-ghosh.github.io/portfolio-oasis-imfobyte/">Portfolio</a>
           <a href="/about">About</a>
           <a href="/contact">Contact</a>
 

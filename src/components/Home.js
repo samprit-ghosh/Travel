@@ -2,7 +2,7 @@ import React from "react";
 import MyWraper from "./Mywraper";
 import WhatsappIcon from "./watsapp";
 import { HeroSection } from "./watsapp";
-// import ScrollToTopButton from "./scroll-top";
+import ScrollToTopButton from "./scroll-top";
 import { LoginPopup } from "./LoginPopup";
 
 
@@ -174,7 +174,7 @@ function Home() {
             </div>
           </div>
         </div>
-{/* <ScrollToTopButton></ScrollToTopButton> */}
+<ScrollToTopButton></ScrollToTopButton>
       </div></div>
 
 
