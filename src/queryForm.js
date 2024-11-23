@@ -36,7 +36,7 @@ function TravelSlider() {
                 <h3 className="heading-tertiary u-margin-bottom-small">You're going to fall in love with nature</h3>
                 <p className="paragraph-query">
                 
-Ah, nature is an endless source of inspiration and wonder! there's so much to fall in love with. What part of nature speaks to your soul the most? 🌿🌊✨
+Ah! Nature is an endless source of inspiration and wonder! There's so much to fall in love with. What part of nature speaks to your soul the most? 🌿🌊✨
                 </p>
                 <h3 className="heading-tertiary u-margin-bottom-small">Live adventures like you never have before</h3>
                 <p className="paragraph-query">
@@ -66,7 +66,9 @@ What's an adventure you've always dreamed of taking? 🚀🌍
                 <div className="book__form">
                   <form action="#" className="form-query">
                     <div className="u-margin-bottom-medium">
+                      <br></br>
                       <h2 className="heading-secondary">
+                      <br></br>
                         Start booking now
                       </h2>
                     </div>
@@ -118,7 +120,7 @@ What's an adventure you've always dreamed of taking? 🚀🌍
                   <i className="feature-box__icon icon-basic-world" />
                   <h3 className="heading-tertiary u-margin-bottom-small">Explore the world</h3>
                   <p className="feature-box__text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur.
+                  Ready to explore the world? Whether you're dreaming of far-off lands or planning your next local getaway, let's dive into the wonders our planet has to offer.
                   </p>
                 </div>
               </div>
@@ -127,7 +129,7 @@ What's an adventure you've always dreamed of taking? 🚀🌍
                   <i className="feature-box__icon icon-basic-compass" />
                   <h3 className="heading-tertiary u-margin-bottom-small">Meet nature</h3>
                   <p className="feature-box__text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur.
+                  Nature offers a plethora of benefits for both our physical and mental health. Spending time outdoors can reduce stress, improve mood, boost creativity.
                   </p>
                 </div>
               </div>
@@ -136,16 +138,18 @@ What's an adventure you've always dreamed of taking? 🚀🌍
                   <i className="feature-box__icon icon-basic-map" />
                   <h3 className="heading-tertiary u-margin-bottom-small">Find your way</h3>
                   <p className="feature-box__text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur.
+                  It's okay to feel lost sometimes. Everyone experiences periods of uncertainty. The key is to find your way back to yourself and your path.
                   </p>
                 </div>
               </div>
               <div className="col-1-of-4">
                 <div className="feature-box">
                   <i className="feature-box__icon icon-basic-heart" />
-                  <h3 className="heading-tertiary u-margin-bottom-small">Live a healthier life</h3>
+                  <h3 className="heading-tertiary u-margin-bottom-small">Live a healthy life</h3>
                   <p className="feature-box__text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur.
+                  Eat a Balanced Diet: Prioritize fruits, vegetables, whole grains, lean proteins, and healthy fats. Hydrate: Drink plenty of water throughout the day.
+
+  
                   </p>
                 </div>
               </div>
@@ -164,6 +168,8 @@ What's an adventure you've always dreamed of taking? 🚀🌍
       <br></br>
       <ScrollToTopButton></ScrollToTopButton>
       </div>
+
+      {/* <br></br> <br></br> <br></br> */}
       </html>
 
 

@@ -1,12 +1,23 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import MyWraper from "./Mywraper";
 import WhatsappIcon from "./watsapp";
 import { HeroSection } from "./watsapp";
 import ScrollToTopButton from "./scroll-top";
+// import SearchResults from "./SearchResults";
 import { LoginPopup } from "./LoginPopup";
+
+import Header from "../nav";
+
 
 
 function Home() {
+
+
+
+
+
+
+
   return (
     <>
     <div className=''>
@@ -66,11 +77,13 @@ function Home() {
           <br></br>
           <WhatsappIcon></WhatsappIcon>
 
-
+     
         </div>
+        <br>
+</br>        <br>
+</br>
 
       </div>
-
 
 
 
@@ -85,9 +98,9 @@ function Home() {
     style={{ backgroundImage: 'url(https://burst.shopifycdn.com/photos/hiker-looks-up-at-vertical-mountain-peaks.jpg?width=1000&format=pjpg&exif=0&iptc=0)' }}
   >
     <div className="card-content">
-      <h1>Flavors of the mountains</h1>
+      <h1>Flavours of the mountains</h1>
       <p>
-      Flavors of the Mountain offers a unique culinary experience inspired by the fresh, bold tastes and ingredients found in mountainous regions
+      Flavours of the Mountain offers a unique culinary experience inspired by the fresh, bold tastes and ingredients found in mountainous regions
       </p>
     </div>
   </article>
@@ -101,9 +114,9 @@ function Home() {
     data-primarycolor="#145258"
   >
     <div className="card-content">
-      <h1>Flavors of the desert</h1>
+      <h1>Flavours of the desert</h1>
       <p>
-       Flavors of the desert offer a unique blend of rich spices, aromatic herbs, and exotic ingredients, creating bold and unforgettable culinary experiences .......</p>
+       Flavours of the desert offer a unique blend of rich spices, aromatic herbs, and exotic ingredients, creating bold and unforgettable culinary experiences .......</p>
     </div>
   </article>
   <a href="/query" className="read-more">Read more</a>
@@ -116,9 +129,9 @@ function Home() {
     data-primarycolor="#145258"
   >
     <div className="card-content">
-      <h1>Flavors of the forest</h1>
+      <h1>Flavours of the forest</h1>
       <p>
-      Flavors of Forest offers a unique culinary experience, featuring dishes inspired by the natural ingredients and earthy tastes found in the forest............
+      Flavours of Forest offers a unique culinary experience, featuring dishes inspired by the natural ingredients and earthy tastes found in the forest............
       </p>
     </div>
   </article>
@@ -132,9 +145,9 @@ function Home() {
     data-primarycolor="#145258"
   >
     <div className="card-content">
-      <h1>Flavors of the waterfall</h1>
+      <h1>Flavours of the waterfall</h1>
       <p>
-      Flavors of Waterfall captures the essence of nature's beauty and serenity, offering a sensory experience that blends the refreshing sights and mist of cascading waters.
+      Flavours of Waterfall captures the essence of nature's beauty and serenity, offering a sensory experience that blends the refreshing sights and mist of cascading waters.
       </p>
     </div>
   </article>
@@ -165,16 +178,16 @@ function Home() {
           <br />
         </center>
         <br /><br />
-        <div data-w-id="9d72ffef-65b8-b1b1-0830-f3f260a3d4a6" className="footer wf-section">
+        <div data-w-id="" className="footer-v">
           <div className="footer__loop-wrapper">
             <div data-poster-url="https://uploads-ssl.webflow.com/5fcf5cffc0333cf6b6778946/5fe48b14d7bed20939d36012_loop-faster-poster-00001.jpg" data-video-urls="https://uploads-ssl.webflow.com/5fcf5cffc0333cf6b6778946/5fe48b14d7bed20939d36012_loop-faster-transcode.mp4,https://uploads-ssl.webflow.com/5fcf5cffc0333cf6b6778946/5fe48b14d7bed20939d36012_loop-faster-transcode.webm" data-autoplay="true" data-loop="true" data-wf-ignore="true" data-beta-bgvideo-upgrade="false" className="footer__loop w-background-video w-background-video-atom"><video id="42ba8166-dbb0-a646-049e-23a0802e92a2-video" autoPlay loop style={{}} muted playsInline data-wf-ignore="true" data-object-fit="cover">
               <source src="https://uploads-ssl.webflow.com/5fcf5cffc0333cf6b6778946/5fe48b14d7bed20939d36012_loop-faster-transcode.mp4" data-wf-ignore="true" />
               <source src="https://uploads-ssl.webflow.com/5fcf5cffc0333cf6b6778946/5fe48b14d7bed20939d36012_loop-faster-transcode.webm" data-wf-ignore="true" />
             </video>
             </div>
-          </div>
+          </div><ScrollToTopButton></ScrollToTopButton>
         </div>
-<ScrollToTopButton></ScrollToTopButton>
+
       </div></div>
 
 

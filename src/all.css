@@ -321,7 +321,7 @@ body{
 
 
 
-.navbar a{
+.navbar .a-nav{
   color: #fff;
   text-shadow: 1px 1px 1px black;
   font-size: 18px;
@@ -336,6 +336,21 @@ body{
 .navbar a:hover{
   color: #f00;
 }
+
+
+.a-gl{
+  color: #fff;
+
+  font-size: 18px;
+  text-decoration: none;
+  margin-left: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: .3s;
+}
+
+
 .navbar {
   display: flex;
   gap: 20px;
@@ -382,8 +397,8 @@ body{
       padding: 10px;
    padding-top: 20px;
    padding-bottom: 20px;
- 
-   border-radius: 10px;
+/*  
+   border-radius: 10px; */
       z-index: 9;
 
 
@@ -396,7 +411,7 @@ body{
     margin-top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 40px;
+    padding: 25px 40px;
     
     background: rgba(6, 2, 255, 0.155);
     display: flex;
@@ -407,7 +422,7 @@ body{
     z-index: 100;
   }
 
-  .navbar a{
+  .navbar .a-nav{
     color: #fff;
     text-shadow: 1px 1px 1px black;
     font-size: 18px;
@@ -418,6 +433,32 @@ body{
     justify-content: center;
     transition: .3s;
   }
+
+
+
+  .a-gl{
+    color: #fff;
+  
+    font-size: 18px;
+    text-decoration: none;
+    margin-left: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+
+  }
+
+  .mb-sc{
+
+  /* background-color: #eeff00; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+
+  }
+  
 
   /* Show navbar when active */
   .navbar.active {

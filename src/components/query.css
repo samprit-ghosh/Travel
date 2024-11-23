@@ -102,6 +102,7 @@ max-width: 100%;
   justify-content: center;
   border-radius: 50%;
   cursor: pointer;
+  z-index: -999999999999;
 }
 
 .custom-arrow:hover {
@@ -533,7 +534,7 @@ line-height: 3rem;}
         .composition__photo--p2 {
           top: -1rem;
           transform: scale(1.2);
-          z-index: 100; } }
+           } }
     .composition__photo--p3 {
       left: 20%;
       top: 10rem; }

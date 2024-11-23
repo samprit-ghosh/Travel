@@ -173,29 +173,7 @@ html {
   
   
   
-  
-  .preloader {
-    z-index: 999999;
-    background-color: #082051;
-    justify-content: center;
-    align-items: center;
-    display: none;
-    position: fixed;
-    top: 0%;
-    bottom: 0%;
-    left: 0%;
-    right: 0%;
-  }
-  
-  .preloader__text {
-    color: #17066a;
-    text-align: center;
-    font-family: Poppins, sans-serif;
-    font-size: 24px;
-    font-weight: 500;
-    line-height: 1em;
-  }
-  
+
   
   
   audio, canvas, progress, video {
@@ -1171,179 +1149,29 @@ html {
     }
   }
   
-  .w-widget {
-    position: relative;
-  }
-  
-  .w-widget-map {
-    width: 100%;
-    height: 400px;
-  }
-  
-  .w-widget-map label {
-    width: auto;
-    display: inline;
-  }
-  
-  .w-widget-map img {
-    max-width: inherit;
-  }
-  
-  .w-widget-map .gm-style-iw {
-    text-align: center;
-  }
-  
-  .w-widget-map .gm-style-iw > button {
-    display: none !important;
-  }
-  
-  .w-widget-twitter {
-    overflow: hidden;
-  }
-  
-  .w-widget-twitter-count-shim {
-    vertical-align: top;
-    width: 28px;
-    height: 20px;
-    text-align: center;
-    background: #fff;
-    border: 1px solid #758696;
-    border-radius: 3px;
-    display: inline-block;
-    position: relative;
-  }
-  
-  .w-widget-twitter-count-shim * {
-    pointer-events: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-  }
-  
-  .w-widget-twitter-count-shim .w-widget-twitter-count-inner {
-    text-align: center;
-    color: #999;
-    font-family: serif;
-    font-size: 15px;
-    line-height: 12px;
-    position: relative;
-  }
-  
-  .w-widget-twitter-count-shim .w-widget-twitter-count-clear {
-    display: block;
-    position: relative;
-  }
-  
-  .w-widget-twitter-count-shim.w--large {
-    width: 36px;
-    height: 28px;
-  }
-  
-  .w-widget-twitter-count-shim.w--large .w-widget-twitter-count-inner {
-    font-size: 18px;
-    line-height: 18px;
-  }
-  
-  .w-widget-twitter-count-shim:not(.w--vertical) {
-    margin-left: 5px;
-    margin-right: 8px;
-  }
-  
-  .w-widget-twitter-count-shim:not(.w--vertical).w--large {
-    margin-left: 6px;
-  }
-  
-  .w-widget-twitter-count-shim:not(.w--vertical):before, .w-widget-twitter-count-shim:not(.w--vertical):after {
-    content: " ";
-    height: 0;
-    width: 0;
-    pointer-events: none;
-    border: solid rgba(0, 0, 0, 0);
-    position: absolute;
-    top: 50%;
-    left: 0;
-  }
-  
-  .w-widget-twitter-count-shim:not(.w--vertical):before {
-    border-width: 4px;
-    border-color: rgba(117, 134, 150, 0) #5d6c7b rgba(117, 134, 150, 0) rgba(117, 134, 150, 0);
-    margin-top: -4px;
-    margin-left: -9px;
-  }
-  
-  .w-widget-twitter-count-shim:not(.w--vertical).w--large:before {
-    border-width: 5px;
-    margin-top: -5px;
-    margin-left: -10px;
-  }
-  
-  .w-widget-twitter-count-shim:not(.w--vertical):after {
-    border-width: 4px;
-    border-color: rgba(255, 255, 255, 0) #fff rgba(255, 255, 255, 0) rgba(255, 255, 255, 0);
-    margin-top: -4px;
-    margin-left: -8px;
-  }
-  
-  .w-widget-twitter-count-shim:not(.w--vertical).w--large:after {
-    border-width: 5px;
-    margin-top: -5px;
-    margin-left: -9px;
-  }
-  
-  .w-widget-twitter-count-shim.w--vertical {
-    width: 61px;
-    height: 33px;
-    margin-bottom: 8px;
-  }
-  
-  .w-widget-twitter-count-shim.w--vertical:before, .w-widget-twitter-count-shim.w--vertical:after {
-    content: " ";
-    height: 0;
-    width: 0;
-    pointer-events: none;
-    border: solid rgba(0, 0, 0, 0);
-    position: absolute;
-    top: 100%;
-    left: 50%;
-  }
-  
-  .w-widget-twitter-count-shim.w--vertical:before {
-    border-width: 5px;
-    border-color: #5d6c7b rgba(117, 134, 150, 0) rgba(117, 134, 150, 0);
-    margin-left: -5px;
-  }
-  
-  .w-widget-twitter-count-shim.w--vertical:after {
-    border-width: 4px;
-    border-color: #fff rgba(255, 255, 255, 0) rgba(255, 255, 255, 0);
-    margin-left: -4px;
-  }
-  
-  .w-widget-twitter-count-shim.w--vertical .w-widget-twitter-count-inner {
-    font-size: 18px;
-    line-height: 22px;
-  }
-  
-  .w-widget-twitter-count-shim.w--vertical.w--large {
-    width: 76px;
-  }
   
   .w-background-video {
-    height: 500px;
+    height: 50vh;
     color: #fff;
     position: relative;
     overflow: hidden;
+    /* background-color: #ea0303; */
+
   }
   
   .w-background-video > video {
     width: 100%;
-    height: 100%;
+    height: 70vh;
     object-fit: cover;
-    z-index: -100;
-    background-position: 50%;
+
+    background-position: 50%; 
     background-size: cover;
-    margin: auto;
-    position: absolute;
+     margin: auto;
+     /* background-color: #b20606; */
+ 
+    position:absolute;
+    z-index: -100;
+margin: auto;
     top: -100%;
     bottom: -100%;
     left: -100%;
@@ -1372,7 +1200,7 @@ html {
     text-align: center;
     clear: both;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    tap-highlight-color: rgba(0, 0, 0, 0);
+    --tap-highlight-color: rgba(0, 0, 0, 0);
     background: #ddd;
     position: relative;
   }
@@ -1470,7 +1298,7 @@ html {
     cursor: pointer;
     color: #fff;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    tap-highlight-color: rgba(0, 0, 0, 0);
+    --tap-highlight-color: rgba(0, 0, 0, 0);
     -webkit-user-select: none;
     -ms-user-select: none;
     user-select: none;
@@ -2829,10 +2657,19 @@ html {
   
   
   .footer {
-    z-index: 1;
+    /* z-index: 1; */
     height:60vh;
     position: relative;
     overflow: hidden;
+    /* padding-top: 40px; */
+    /* background-color: azure; */
+  }
+
+  .footer-v {
+    z-index: 1;
+    height:70vh;
+    position: relative;
+    /* overflow: hidden; */
     /* padding-top: 40px; */
     /* background-color: azure; */
   }
@@ -2842,7 +2679,7 @@ html {
   }
   
   .footer__loop {
-    z-index: 1;
+ z-index: 1;
     width: 100%;
     height: 100%;
     position: absolute;
@@ -2942,7 +2779,7 @@ html {
   
   .hero__videos-wrapper {
     width: 100vw;
-    height: 50vh;
+    height: 70vh;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -2957,7 +2794,7 @@ html {
   
   .footer__loop-wrapper {
     width: 100vw;
-    height: 100vh;
+    height: 70vh;
     position: absolute;
     top: 0%;
     bottom: 0%;
@@ -3382,34 +3219,7 @@ html {
       width: 200vw;
     }
   
-    .footer__wrapper {
-      justify-content: flex-start;
-      padding-top: 2vw;
-    }
-  
-    .footer__heading {
-      font-size: 8vw;
-    }
-  
-    .footer__cta {
-      width: 83vw;
-      font-size: 6.66vw;
-      position: absolute;
-      bottom: 30vw;
-    }
-  
-    .footer__bottom {
-      flex-direction: column-reverse;
-      bottom: 8vw;
-    }
-  
-    .footer__powered {
-      display: none;
-    }
-  
-    .footer__language-menu {
-      margin-bottom: 6vw;
-    }
+   
   
     .scan__cursor-appears {
       display: none;
@@ -3702,28 +3512,16 @@ height:130vh;
 
 /*///////////////////////////upper footer//////////////////////////////////////////// */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .footer{
 	/* background: #0d1117; */
-	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	/* box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12); */
 	box-sizing: border-box;
 	width: 100%;
 	text-align: left;
 	font: bold 16px sans-serif;
-	padding: 95px 50px;
+  height: fit-content;
+	padding: 75px 50px;
+
   color:#fff!important;
 }
 
@@ -3781,7 +3579,7 @@ height:130vh;
 }
 
 .footer .footer-center i{
-	background-color:  #33383b;
+	background-color:  #151515;
 	color: #ffffff;
 	font-size: 25px;
 	width: 38px;
@@ -3903,8 +3701,14 @@ margin-bottom: 80px;
 
 	.footer{
 		font: bold 14px sans-serif;
-    padding-top: 0;
-    margin-top: 0;
+    padding: 15px 50px;
+
+    /* padding-top: 10rem; */
+    margin-bottom: -4rem;
+    height: 120vh;
+
+    max-height: 100%;
+    /* background-color: #ff0000; */
 	}
 
 	.footer .footer-left,
@@ -3915,10 +3719,26 @@ margin-bottom: 80px;
 		margin-bottom: 40px;
 		text-align: center;
 	}
-
+ 
 	.footer .footer-center i{
 		margin-left: 0;
 	}
+
+}
+@media (max-width: 350px) {
+
+	.footer{
+		font: bold 14px sans-serif;
+margin-top: -3rem;
+padding: 25px 50px;
+padding-bottom: 0rem;
+height: 135vh;
+
+    background-color: #151515;
+
+	}
+
+
 
 }
 

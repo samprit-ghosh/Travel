@@ -1,5 +1,5 @@
 import React from "react";
-import { Routes, Route } from "react-router-dom";
+
 import Footer from "./components/footer";
 import RandomDestination from "./queryForm";
 
@@ -8,10 +8,11 @@ import './all.css';
 // import { GoogleLogin } from '@react-oauth/google';
 import About from "./components/About";
 import Contact from "./components/Contact";
+import { Routes, Route,Navigate  } from "react-router-dom";
 import Home from "./components/Home"
 import Header from "./nav";
 
-import TravelSlider from "./components/admin";
+
 
 
 
@@ -36,8 +37,8 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/query" element={<RandomDestination />} />
-          <Route path="/admin" element={<TravelSlider />} />
    
+          <Route path="*" element={<Navigate to="/" />} />
         </Routes>
 
 

@@ -23,7 +23,7 @@ const Contact = () => {
           <br />
           <br />
           <br />
-          <h1 style={{ color: "white" }}>Get in touch!</h1>
+          <h1 style={{ color: "white" }}>Get in Touch!</h1>
           <br />
           <ul style={{ marginLeft: 0, paddingLeft: 0, listStyle: "none" }}>
             <li>

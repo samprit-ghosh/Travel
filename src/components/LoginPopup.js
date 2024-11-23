@@ -145,7 +145,7 @@ const LoginPopup = () => {
             <div className="popup-login">
               <h2 className="h2-login">Login</h2>
               <br />
-
+<center>
               <GoogleLogin
                 onSuccess={handleLoginSuccess}
                 onError={() => {
@@ -171,6 +171,7 @@ const LoginPopup = () => {
                   </button>
                 )}
               />
+              </center>
 
               <br />
               <div className="actions-login">
