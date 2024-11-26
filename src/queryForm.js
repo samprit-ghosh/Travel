@@ -3,6 +3,10 @@ import "./components/query.css"
 import Contact from "./components/Contact";
 import ImageSlider from "./components/heroQuery"
 import ScrollToTopButton from "./components/scroll-top";
+import ContactForm from "./components/contactquery";
+
+
+// import ContactForm from "./components/contactquery";
 
 function TravelSlider() {
 
@@ -60,57 +64,10 @@ What's an adventure you've always dreamed of taking? 🚀🌍
               </div>
             </div>
           </section>
-          <section className="section-book ">
-            <div className="row-query">
-              <div className="book">
-                <div className="book__form">
-                  <form action="#" className="form-query">
-                    <div className="u-margin-bottom-medium">
-                      <br></br>
-                      <h2 className="heading-secondary">
-                      <br></br>
-                        Start booking now
-                      </h2>
-                    </div>
-                    <div className="form__group">
-                      <input type="text" className="form__input" placeholder="Full name" id="name" required />
-                      <label htmlFor="name" className="form__label">Full name</label>
-                    </div>
-                    <div className="form__group">
-                      <input type="text" className="form__input" placeholder="Destination" id="name" required />
-                      <label htmlFor="name" className="form__label">Destination</label>
-                    </div>
-                    <div className="form__group">
-                      <input type="tel" className="form__input" placeholder="Email address / phone no" id="email" required />
-                      <label htmlFor="tel" className="form__label">Phone Number</label>
-                    </div>
-                    <div className="form__group u-margin-bottom-medium">
-                      <div className="form__radio-group">
-                        <input type="radio" className="form__radio-input" id="small" name="size" />
-                        <label htmlFor="small" className="form__radio-label">
-                          <span className="form__radio-button" />
-                          Small tour group
-                        </label>
-                      </div>
-                      <div className="form__radio-group">
-                        <input type="radio" className="form__radio-input" id="large" name="size" />
-                        <label htmlFor="large" className="form__radio-label">
-                          <span className="form__radio-button" />
-                          Large tour group
-                        </label>
-                      </div>
-                    </div>
-                    <div className="form__group">
-                      <button className="cta-button">Next step →</button>
-               <br></br>
-               <br></br>
-               <br></br>
-                    </div>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </section>
+
+
+
+<ContactForm></ContactForm>
 
 
           <section className="section-features">
@@ -155,7 +112,7 @@ What's an adventure you've always dreamed of taking? 🚀🌍
               </div>
             </div>
           </section>
-
+{/* <ContactForm></ContactForm> */}
 
 
           

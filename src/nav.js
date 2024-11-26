@@ -121,15 +121,19 @@ const Header = ( ) => {
           <a className="a-nav" href="/https://samprit-ghosh.github.io/portfolio-oasis-imfobyte/">Portfolio</a>
           <a className="a-nav" href="/about">About</a>
           <a className="a-nav" href="/contact">Contact</a>
+          <a className="a-nav" href="/adminpage">Admin</a>
         {/* <SearchBar ></SearchBar>
   */}
 
           {!loginSuccess ? (
-         <a className="a-gl"> <GoogleLogin
+         <a className="a-gl"> 
+         <GoogleLogin
               clientId="337889366589-rph5vunrtkpmr6c8lr2b5p2t46k7kj1m.apps.googleusercontent.com" // Replace with your Google OAuth Client ID
               onSuccess={handleLoginSuccess}
               onFailure={(error) => console.log("Login failed", error)}
               scope="openid profile email"
+            
+          
               prompt="select_account"
               theme="outline"
               size="large"

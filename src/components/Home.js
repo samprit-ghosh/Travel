@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import MyWraper from "./Mywraper";
 import WhatsappIcon from "./watsapp";
 import { HeroSection } from "./watsapp";
@@ -6,7 +6,9 @@ import ScrollToTopButton from "./scroll-top";
 // import SearchResults from "./SearchResults";
 import { LoginPopup } from "./LoginPopup";
 
-import Header from "../nav";
+// import Header from "../nav";
+
+import MapEmbed from "./map";
 
 
 
@@ -66,12 +68,19 @@ function Home() {
 
       <div data-w-id="e6ead6b0-4882-8531-2d3a-64510704dd5f" className="requests wf-section">
         <div className="requests__video-wrapper">
-          <div className="requests__video" data-w-id="926ddacf-6499-3cf5-e8f0-b14a9f3e4dd0" data-animation-type="lottie" data-src="https://uploads-ssl.webflow.com/5fcf5cffc0333cf6b6778946/5fe109258edaa9554f40a793_mail_loop.json" data-loop={1} data-direction={1} data-autoplay={1} data-is-ix2-target={0} data-renderer="canvas" data-default-duration="4.204204032963467" data-duration="4.204204032963467" />
+  
+   
+        <img
+      src="https://upload.wikimedia.org/wikipedia/commons/7/7f/Rotating_earth_animated_transparent.gif"
+      alt="Online GIF"
+    />
+
+
         </div>
         <div className="requests__wrapper">
           <MyWraper></MyWraper>
           <p className='reading'>
-            <span className='reading-right'> Please Contact me on Whatsap </span> ...
+            <span className='reading-right'> Please Contact me on Whatsapp </span> ...
 
           </p>
           <br></br>

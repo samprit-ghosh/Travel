@@ -3093,29 +3093,7 @@ margin: auto;
       font-size: 3.3vw;
     }
   
-    .create__coin3-wrapper {
-      display: none;
-    }
-  
-    .create__coin2-wrapper {
-      width: 55vw;
-      top: 148vw;
-      left: 5%;
-    }
-  
-    .create__coin2 {
-      transform: scale(1);
-    }
-  
-    .create__coin1-wrapper {
-      width: 55vw;
-      top: 25vw;
-      left: 40%;
-    }
-  
-    .create__coin1 {
-      transform: scale(1);
-    }
+
   
     .requests {
       flex-direction: column;
@@ -3126,7 +3104,7 @@ margin: auto;
   
     .requests__video-wrapper {
       width: 63vw;
-      height: 63vw;
+      height: 62vw;
       margin: auto;
       position: relative;
       top: auto;
@@ -3139,7 +3117,7 @@ margin: auto;
   
     .requests__wrapper {
       align-items: center;
-      margin-top: 22vw;
+      margin-top: 5vw;
       margin-left: auto;
       margin-right: auto;
     }
@@ -3904,6 +3882,7 @@ font-size: 20px;
 .user-profile {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 10px;
   color: white;
   margin-left: 20px;
@@ -3911,6 +3890,7 @@ font-size: 20px;
 }
 
 .user-avatar {
+  
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -3932,4 +3912,17 @@ font-size: 20px;
 .logout-btn:hover {
   border-color: #fab300;
   background: transparent;
+}
+
+
+
+@media(max-width:950px){
+
+  .overlay{
+    margin-top: 3rem;
+height: fit-content;
+
+  }
+
+
 }
